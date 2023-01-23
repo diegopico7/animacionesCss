@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+}
+
+.carta {
+  height: 200px;
+
+  flex: 1;
+  transition: all -3s;
+  overflow: hidden;
+}
+.carta img {
+  object-fit: cover;
+  filter: grayscale(1);
+}
+
+.carta:hover {
+  flex: 3;
+}
+
+.carta:hover img {
+  filter: none;
+}
