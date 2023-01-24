@@ -1,11 +1,13 @@
 .container {
-  width: 400px;
-  height: 400px;
+  width: 358px;
+  height: 150px;
   background-color: rgb(245, 240, 240);
-  margin: 40px auto;
+  /* margin: 40px auto; */
   overflow: hidden;
 }
-
+.codigo {
+  height: 540px;
+}
 .pelota {
   width: 200px;
   margin: 0 auto;
@@ -13,19 +15,16 @@
   border-radius: 50%;
   animation: pelota 1s step-start infinite;
 }
-
 @keyframes pelota {
   0% {
     transform: translateY(50px);
     scale: 0.1;
   }
-
   25% {
     transform: translateY(-50px);
   }
   50% {
     transform: translateY(50px);
-    scale: 0.3;
   }
   70% {
     transform: translateY(-50px);
@@ -33,25 +32,5 @@
   100% {
     transform: translateY(-150px);
     scale: 0.3;
-    display: none;
   }
 }
-
-/* .vidrio {
-  width: max-content;
-  height: fit-content;
-  margin: 0 auto;
-
-  z-index: 1;
-  animation: vidrioroto 3s ease;
-} */
-
-/* @keyframes vidrioroto {
-  0% {
-    transform: scale(0.5);
-  }
-  100% {
-    transition-delay: 0s;
-    transform: scale(1);
-  }
-} */
